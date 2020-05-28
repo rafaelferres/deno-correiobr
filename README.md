@@ -3,7 +3,7 @@ CorreiosBR is a complete tool for those looking for ease of application, optimiz
 
 ## How to query a zip code
 
-    import  {  Cep }  from  './mod.ts';
+    import  {  Cep }  from  'https://deno.land/x/deno_correiobr/mod.ts';
     let cep  =  new  Cep();
     cep.requestViaCepService("01311-922").then((response)  =>  {
     	console.log(response);
@@ -24,7 +24,7 @@ Response:
 
 ## How to check the price and delivery time of an order
 
-    import  { Correios  }  from  './mod.ts';
+    import  { Correios  }  from  'https://deno.land/x/deno_correiobr/mod.ts';
     let correios  =  new  Correios();
     
     correios.getPrecoPrazo({
@@ -59,7 +59,7 @@ Response:
 
 ## How to track an order
 
-    import  {  Rastreio  }  from  './mod.ts';
+    import  {  Rastreio  }  from  'https://deno.land/x/deno_correiobr/mod.ts';
     let rastreio  =  new  Rastreio();
 
     rastreio.rastrear(["OJ576775628BR"]).then((response)  =>  {
